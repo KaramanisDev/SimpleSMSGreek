@@ -4,7 +4,7 @@
 	"keywords": ["sms", "laravel", "simple-sms", "text messages","greek", "drivers"],
 	"type": "library",
 	"license": "MIT",
-	"minimum-stability": "dev"
+	"minimum-stability": "dev",
 	"authors": [
 		{
 			"name": "Ilias Karamanis",
@@ -19,5 +19,5 @@
 		"psr-4": {
 			"KaramanisWeb\\SimpleSMSGreek\\": "src/"
 		}
-	},
+	}
 }
