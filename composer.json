@@ -1,0 +1,23 @@
+{
+	"name": "karamanisweb/simplesmsgreek",
+	"description": "A wrapper for SimpleSMS Laravel package that provides additional Greek sms drivers.",
+	"keywords": ["sms", "laravel", "simple-sms", "text messages","greek", "drivers"],
+	"type": "library",
+	"license": "MIT",
+	"minimum-stability": "dev"
+	"authors": [
+		{
+			"name": "Ilias Karamanis",
+			"email": "karamanisweb@gmail.com"
+		}
+	],
+	"require": {
+		"php": ">=7.0.0",
+		"simplesoftwareio/simple-sms": "^3.1"
+	},
+	"autoload": {
+		"psr-4": {
+			"KaramanisWeb\\SimpleSMSGreek\\": "src/"
+		}
+	},
+}
