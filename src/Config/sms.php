@@ -6,19 +6,19 @@ return [
     'from' => env('SMS_FROM', 'Your Number or Email or Name'),
 
     'ez4us' => [
-        'username'    => env('EZ4US_USERNAME', 'Your Ez4us Username'),
+        'username' => env('EZ4US_USERNAME', 'Your Ez4us Username'),
         'password' => env('EZ4US_PASSWORD', 'Your Ez4us Password'),
-        'coding' => env('EZ4US_CODING', 'GSM'),
+        'unicode' => env('EZ4US_UNICODE', false),
     ],
 
     'smsn' => [
-        'username'    => env('SMSN_USERNAME', 'Your Smsn Username'),
+        'username' => env('SMSN_USERNAME', 'Your Smsn Username'),
         'password' => env('SMSN_PASSWORD', 'Your Smsn Password'),
-        'coding' => env('SMSN_CODING', 'GSM'),
+        'unicode' => env('SMSN_UNICODE', false),
     ],
 
     'smsnetgr' => [
-        'username'    => env('SMSNETGR_USERNAME', 'Your Smsnetgr Username'),
+        'username' => env('SMSNETGR_USERNAME', 'Your Smsnetgr Username'),
         'api_password' => env('SMSNETGR_API_PASS', 'Your Smsnetgr API Password'),
         'api_token' => env('SMSNETGR_API_TOKEN', 'Your Smsnetgr API Token'),
         'unicode' => env('SMSNETGR_UNICODE', false),

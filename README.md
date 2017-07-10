@@ -1,13 +1,13 @@
 SimpleSMSGreek
 ==========
 [![Build Status](https://travis-ci.org/KaramanisWeb/SimpleSMSGreek.svg?branch=master)](https://travis-ci.org/KaramanisWeb/SimpleSMSGreek)
-[![Latest Stable Version](https://poser.pugx.org/karamanisweb/simplesmsgreek/v/stable)](https://packagist.org/packages/karamanisweb/simplesmsgreek)
-[![Latest Unstable Version](https://poser.pugx.org/karamanisweb/simplesmsgreek/v/unstable)](https://packagist.org/packages/karamanisweb/simplesmsgreek)
-[![License](https://poser.pugx.org/karamanisweb/simplesmsgreek/license)](https://packagist.org/packages/karamanisweb/simplesmsgreek)
-[![Total Downloads](https://poser.pugx.org/karamanisweb/simplesmsgreek/downloads)](https://packagist.org/packages/karamanisweb/simplesmsgreek)
+[![Latest Stable Version](https://poser.pugx.org/KaramanisWeb/SimpleSMSGreek/v/stable)](https://packagist.org/packages/KaramanisWeb/SimpleSMSGreek)
+[![Latest Unstable Version](https://poser.pugx.org/KaramanisWeb/SimpleSMSGreek/v/unstable)](https://packagist.org/packages/karamanisweb/simplesmsgreek)
+[![License](https://poser.pugx.org/KaramanisWeb/SimpleSMSGreek/license)](https://packagist.org/packages/karamanisweb/simplesmsgreek)
+[![Total Downloads](https://poser.pugx.org/KaramanisWeb/SimpleSMSGreek/downloads)](https://packagist.org/packages/karamanisweb/simplesmsgreek)
 
 ## Introduction
-SimpleSMSGreek is a wrapper for [SimpleSMS](https://github.com/simplesoftwareio/simple-sms) package that provides additional Greek SMS drivers. [simplesoftwareio/simple-sms](https://github.com/simplesoftwareio/simple-sms). This is a package for [Laravel](http://laravel.com/) and provides the capability to use Greek gateways to send SMS. These are the extra providers: [Smssn](http://www.smsn.gr), [Ez4usms](http://ez4usms.com), [Sms.net.gr](http://www.sms.net.gr/)
+SimpleSMSGreek is a wrapper for [SimpleSMS](https://github.com/simplesoftwareio/simple-sms) package that provides additional Greek SMS drivers. [simplesoftwareio/simple-sms](https://github.com/simplesoftwareio/simple-sms). This is a package for [Laravel](http://laravel.com/) and provides the capability to use Greek gateways to send SMS. These are the extra providers: [Smsn](http://www.smsn.gr), [Ez4usms](http://ez4usms.com), [Sms.net.gr](http://www.sms.net.gr/)
 
 ## Requirements
 
@@ -53,19 +53,19 @@ or you can manual copy the config file from `vendors/karamanisweb/simplesmsgreek
 
 ## Documentation
 This package adds 3 greek SMS drivers
-- Smssn
+- Smsn
 - Ez4usms
 - Sms.net.gr
     
 
- #### Smssn
+ #### Smsn
 
  ```php
 'driver' => env('SMS_DRIVER', 'smsn'),
 'smsn' => [
-        'username'    => env('SMSN_USERNAME', 'Your Smsn Username'),
-        'password' => env('SMSN_PASSWORD', 'Your Smsn Password'),
-        'coding' => env('SMSN_CODING', 'GSM'),
+    'username' => env('SMSN_USERNAME', 'Your Smsn Username'),
+    'password' => env('SMSN_PASSWORD', 'Your Smsn Password'),
+    'unicode' => env('SMSN_UNICODE', false),
     ]
 ```
 
@@ -74,9 +74,9 @@ This package adds 3 greek SMS drivers
 ```php
 'driver' => env('SMS_DRIVER', 'ez4us'),
 'ez4us' => [
-        'username'    => env('EZ4US_USERNAME', 'Your Ez4us Username'),
-        'password' => env('EZ4US_PASSWORD', 'Your Ez4us Password'),
-        'coding' => env('EZ4US_CODING', 'GSM'),
+    'username' => env('EZ4US_USERNAME', 'Your Ez4us Username'),
+    'password' => env('EZ4US_PASSWORD', 'Your Ez4us Password'),
+    'unicode' => env('EZ4US_UNICODE', false),
     ]
 ```  
 
@@ -85,10 +85,10 @@ This package adds 3 greek SMS drivers
 ```php
 'driver' => env('SMS_DRIVER', 'smsnetgr'),
 'smsnetgr' => [
-        'username'    => env('SMSNETGR_USERNAME', 'Your Smsnetgr Username'),
-        'api_password' => env('SMSNETGR_API_PASS', 'Your Smsnetgr API Password'),
-        'api_token' => env('SMSNETGR_API_TOKEN', 'Your Smsnetgr API Token'),
-        'unicode' => env('SMSNETGR_UNICODE', false),
+    'username' => env('SMSNETGR_USERNAME', 'Your Smsnetgr Username'),
+    'api_password' => env('SMSNETGR_API_PASS', 'Your Smsnetgr API Password'),
+    'api_token' => env('SMSNETGR_API_TOKEN', 'Your Smsnetgr API Token'),
+    'unicode' => env('SMSNETGR_UNICODE', false),
     ]
 ```  
 

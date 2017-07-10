@@ -17,7 +17,7 @@ class DriverManager extends Manager
             new Client(),
             $config['username'],
             $config['password'],
-            $config['coding']
+            $config['unicode']
         );
         return $provider;
     }
@@ -42,7 +42,7 @@ class DriverManager extends Manager
             new Client(),
             $config['username'],
             $config['password'],
-            $config['coding']
+            $config['unicode']
         );
         return $provider;
     }

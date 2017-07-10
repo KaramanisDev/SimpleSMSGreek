@@ -21,11 +21,11 @@ class SmsnetgrSMS extends AbstractSMS implements DriverInterface
 
     protected $apiBase = 'https://sms.net.gr/index.php/api/do';
 
-    public function __construct(Client $client, $username, $api_password, $api_token, $unicode)
+    public function __construct(Client $client, $username, $apiPassword, $api_token, $unicode)
     {
         $this->client = $client;
         $this->username = $username;
-        $this->api_password = $api_password;
+        $this->api_password = $apiPassword;
         $this->api_token = $api_token;
         $this->unicode = $unicode;
     }

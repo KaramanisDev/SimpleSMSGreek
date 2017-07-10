@@ -16,16 +16,16 @@ class SmsnSMS extends AbstractSMS implements DriverInterface
     protected $client;
     protected $username;
     protected $password;
-    protected $coding;
+    protected $unicode;
 
     protected $apiBase = 'https://www.smsn.gr/api/http/';
 
-    public function __construct(Client $client, $username, $password, $coding)
+    public function __construct(Client $client, $username, $password, $unicode)
     {
         $this->client = $client;
         $this->username = $username;
         $this->password = $password;
-        $this->coding = $coding;
+        $this->unicode = $unicode;
     }
 
     public function send(OutgoingMessage $message)
@@ -41,7 +41,7 @@ class SmsnSMS extends AbstractSMS implements DriverInterface
             'from' => urlencode($message->getFrom()),
             'to' => urlencode($numbers),
             'message' => urlencode($composeMessage),
-            'coding' => urlencode($this->coding),
+            'coding' => urlencode($this->unicode ? 'UTF-8' : 'GSM'),
         ];
 
         $this->buildCall('send.php');
