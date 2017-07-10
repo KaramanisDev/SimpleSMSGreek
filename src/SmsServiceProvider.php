@@ -1,6 +1,6 @@
 <?php
 
-namespace KaramanisWeb\SimpleSMSGreek\Providers;
+namespace KaramanisWeb\SimpleSMSGreek;
 
 use Illuminate\Support\ServiceProvider;
 use KaramanisWeb\SimpleSMSGreek\SMS as sms;

@@ -24,5 +24,12 @@
         "psr-4": {
             "KaramanisWeb\\SimpleSMSGreek\\": "tests/"
         }
-    }
+    },
+	"extra": {
+		"laravel": {
+			"providers": [
+				"KaramanisWeb\\SimpleSMSGreek\\SmsServiceProvider"
+			]
+		}
+	}
 }
