@@ -1,6 +1,6 @@
 <?php
 
-namespace KaramanisWeb\SimpleSMSGreek;
+namespace KaramanisWeb\SimpleSMSGreek\Providers;
 
 use Illuminate\Support\ServiceProvider;
 use KaramanisWeb\SimpleSMSGreek\SMS as sms;
@@ -22,7 +22,7 @@ class SmsServiceProvider extends ServiceProvider
             $this->registerSender();
             $sms = new SMS($app['sms.sender']);
             $this->setSMSDependencies($sms, $app);
-            //Set the from setting
+
             if ($app['config']->has('sms.from')) {
                 $sms->alwaysFrom($app['config']['sms']['from']);
             }
