@@ -1,6 +1,6 @@
 SimpleSMSGreek
 ==========
-
+[![Build Status](https://travis-ci.org/KaramanisWeb/SimpleSMSGreek.svg?branch=master)](https://travis-ci.org/KaramanisWeb/SimpleSMSGreek)
 [![Latest Stable Version](https://poser.pugx.org/karamanisweb/simplesmsgreek/v/stable)](https://packagist.org/packages/karamanisweb/simplesmsgreek)
 [![Latest Unstable Version](https://poser.pugx.org/karamanisweb/simplesmsgreek/v/unstable)](https://packagist.org/packages/karamanisweb/simplesmsgreek)
 [![License](https://poser.pugx.org/karamanisweb/simplesmsgreek/license)](https://packagist.org/packages/karamanisweb/simplesmsgreek)
