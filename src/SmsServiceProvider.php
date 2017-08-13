@@ -18,6 +18,10 @@ class SmsServiceProvider extends ServiceProvider
 
     public function register()
     {
+        if ($this->app['config']->get('sms') === null) {
+            $this->mergeConfigFrom( __DIR__.'/Config/sms.php', 'sms');
+        }
+
         $this->app->singleton('sms', function ($app) {
             $this->registerSender();
             $sms = new SMS($app['sms.sender']);

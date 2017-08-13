@@ -18,7 +18,7 @@ class SmsnSMS extends AbstractSMS implements DriverInterface
     protected $password;
     protected $unicode;
 
-    protected $apiBase = 'https://www.smsn.gr/api/http/';
+    protected $apiBase = 'http://www.smsn.gr/api/http/';
 
     public function __construct(Client $client, $username, $password, $unicode)
     {

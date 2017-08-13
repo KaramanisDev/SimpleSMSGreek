@@ -33,7 +33,7 @@ This procedure will install the package into your application.
 
 Once you have installed the package to your laravel application.
 
-Add `KaramanisWeb\SimpleSMSGreek\Providers\SmsServiceProvider::class` into your `config/app.php` config file inside the `providers` array.
+Add `KaramanisWeb\SimpleSMSGreek\SmsServiceProvider::class` into your `config/app.php` config file inside the `providers` array.
 
 #### Aliases
 
@@ -43,9 +43,9 @@ Add `'SMS' => SimpleSoftwareIO\SMS\Facades\SMS::class` in your `config/app.php` 
 
 #### Publish Configuration
 
-You must run the following command to save your config file to your local app:
+If you need to change to make changes into the configuration file you must run the following command to save your config file to your local app:
 
-     php artisan vendor:publish --provider="KaramanisWeb\SimpleSMSGreek\Providers\SmsServiceProvider"
+     php artisan vendor:publish --provider="KaramanisWeb\SimpleSMSGreek\SmsServiceProvider"
 
 This will copy the configuration files to your `config` folder.
 
